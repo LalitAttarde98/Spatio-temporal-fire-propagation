@@ -1,0 +1,10 @@
+id,u,alpha,Nt,Nx,Ny,theta_filename,ustar_filename,xi_filename
+804025,2,10,150,113,32,theta_K_id804025.dat,ustar_ms-1_id804025.dat,xi_id804025.dat
+875935,2,5,150,113,32,theta_K_id875935.dat,ustar_ms-1_id875935.dat,xi_id875935.dat
+930086,6,0,150,113,32,theta_K_id930086.dat,ustar_ms-1_id930086.dat,xi_id930086.dat
+661713,4,5,150,113,32,theta_K_id661713.dat,ustar_ms-1_id661713.dat,xi_id661713.dat
+633229,2,0,150,113,32,theta_K_id633229.dat,ustar_ms-1_id633229.dat,xi_id633229.dat
+868570,4,0,150,113,32,theta_K_id868570.dat,ustar_ms-1_id868570.dat,xi_id868570.dat
+016525,6,5,150,113,32,theta_K_id016525.dat,ustar_ms-1_id016525.dat,xi_id016525.dat
+808631,6,10,150,113,32,theta_K_id808631.dat,ustar_ms-1_id808631.dat,xi_id808631.dat
+220212,4,10,150,113,32,theta_K_id220212.dat,ustar_ms-1_id220212.dat,xi_id220212.dat
