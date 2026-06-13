@@ -1,0 +1,52 @@
+
+
+Root_directory: "/home/lattarde/workspace/lattarde/baseline/proj5743_apn_parking/apnlab_framework/src/deploy/backend/base/Spatio-temporal-fire-propagation-main"
+
+Dataset_pipeline: 
+  data_csv: "{Root_directory}/dataset/test.csv"
+  data_dir: "{Root_directory}/dataset/test/" # "{Root_directory}/dataset/train/"
+  val_csv: "{Root_directory}/dataset/val.csv"
+  enable_augmentation: False
+  spatial_size: [113, 32]
+  in_frames: 5 #5
+  out_frames: 20 #20
+
+Eval_pipeline:
+  batch_size: 1
+  workers: 0
+  mode: 'Inference' # 'Regular' or 'Autoregressive' or 'Inference'
+
+Enable_validation: False # Set to True for 'Regular' or 'Autoregressive'
+
+Model_parameters:
+  DirectRegressor:
+      inp_channels: 10
+      hidden_dim: 64
+      future_frames: 20
+      input_size: [113, 32]
+      drop: 0.0
+  # Seq2Seq:
+  #     input_dim: 10
+  #     hidden_dim: 64
+  #     downsample: [56, 32] 
+  #     output_dim: 1
+  #     future_frames: 20
+  #     resize_in: [112, 32]
+  #     resize_back: [113, 32]
+  #     enable_attention: True
+  # Fourier_NN:
+      # batch_size: 2
+      # img_size: [113, 32]
+      # n_layers: 1
+      # input_dim: 5
+      # hidden_dim: 16
+  # BiMamba:
+  #     input_dim: 10
+  #     hidden_dim: 64
+  #     downsample: [56, 32]
+  #     resize_in: [112, 32]
+  #     resize_back: [113, 32]
+  #     output_channels: 1
+  #     input_frames: 5
+  #     future_frames: 20
+

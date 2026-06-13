@@ -1,0 +1,62 @@
+
+Root_directory: "/home/lattarde/workspace/lattarde/baseline/proj5743_apn_parking/apnlab_framework/src/deploy/backend/base/Spatio-temporal-fire-propagation-main"
+
+Dataset_pipeline: 
+  data_csv: "{Root_directory}/dataset/train.csv"
+  data_dir: "{Root_directory}/dataset/train/"
+  val_csv: "{Root_directory}/dataset/val.csv"
+  enable_augmentation: False
+  #oversampling: [75, 4] # Comment to disable oversampling, [frame id, sampling factor]
+  spatial_size: [113, 32]
+  in_frames: 5 
+  out_frames: 20 
+
+Enable_validation: True
+
+Training_pipeline:
+  batch_size: 32
+  epochs: 100
+  checkpoint_interval: 10 # epochs
+  workers: 16
+  check_val_every_n_epoch: 5
+  optim_parameters:
+    learning_rate: 0.001
+
+
+Loss_parameters:
+  alpha: 0.25
+  gamma: 2
+  loss_weights: [10.0, 1.0]
+  pos_weight: 10.0
+
+Model_parameters:
+  DirectRegressor:
+      inp_channels: 10
+      hidden_dim: 64
+      future_frames: 20
+      input_size: [113, 32]
+      drop: 0.1
+  # Seq2Seq:
+  #     input_dim: 10
+  #     hidden_dim: 64
+  #     downsample: [56, 32] 
+  #     output_dim: 1
+  #     future_frames: 20
+  #     resize_in: [112, 32]
+  #     resize_back: [113, 32]
+  #     enable_attention: True
+  # Fourier_NN:
+      # batch_size: 2
+      # img_size: [113, 32]
+      # n_layers: 1
+      # input_dim: 5
+      # hidden_dim: 16
+  # BiMamba:
+  #     input_dim: 10
+  #     hidden_dim: 64
+  #     downsample: [56, 32]
+  #     resize_in: [112, 32]
+  #     resize_back: [113, 32]
+  #     output_channels: 1
+  #     input_frames: 5
+  #     future_frames: 20

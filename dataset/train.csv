@@ -6,5 +6,9 @@ id,u,alpha,Nt,Nx,Ny,theta_filename,ustar_filename,xi_filename
 633229,2,0,150,113,32,theta_K_id633229.dat,ustar_ms-1_id633229.dat,xi_id633229.dat
 868570,4,0,150,113,32,theta_K_id868570.dat,ustar_ms-1_id868570.dat,xi_id868570.dat
 016525,6,5,150,113,32,theta_K_id016525.dat,ustar_ms-1_id016525.dat,xi_id016525.dat
+<<<<<<< HEAD
 808631,6,10,150,113,32,theta_K_id808631.dat,ustar_ms-1_id808631.dat,xi_id808631.dat
 220212,4,10,150,113,32,theta_K_id220212.dat,ustar_ms-1_id220212.dat,xi_id220212.dat
+=======
+808631,6,10,150,113,32,theta_K_id808631.dat,ustar_ms-1_id808631.dat,xi_id808631.dat
+>>>>>>> fddff8d (minimal implementation)

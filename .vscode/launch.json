@@ -1,0 +1,39 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Python: Experiment trainer",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}/project/main.py",
+            "console": "integratedTerminal",
+            "justMyCode": false,
+            "args": [
+                 "--train",
+                 "--logs",
+                 "logs/",
+                //"--infer",
+                //"--checkpoint",
+                //"logs/model-epoch=29-v4.ckpt",
+                "configs/training_setup.yaml",
+                ]
+        },
+        {
+            "name": "Python: Experiment eval",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}/project/main.py",
+            "console": "integratedTerminal",
+            "justMyCode": false,
+            "args": [
+                 "--eval",
+                 "--logs",
+                 "logs/",
+                //"--infer",
+                "--checkpoint",
+                "logs/regressor/model-epoch=99.ckpt",
+                "configs/eval_setup.yaml",
+                ]
+        }
+    ]
+}
