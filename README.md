@@ -138,11 +138,9 @@ confirming its robustness for this task and dataset size. Surprisingly, cross en
 
 The animations below show predicted fire propagation for 20 future frames, conditioned on 5 input frames, for three model variants:
 
-| Model | Animation |
-|---|---|
-| BiMamba | `doc/bimamba.mp4` |
-| Autoregressive + Attention | `doc/lstm_attention.mp4` |
-| OneShot FiLM Residual | `doc/regressor_film_residual.mp4` |
+| **BiMamba** | **Autoregressive + Attention** | **OneShot FiLM Residual** |
+|---|---|---|
+| <img src="doc/regressor_film_residual.gif" width="100%" alt="hydra"> | <img src="doc/lstm_attention.gif" width="100%" alt="lstm"> | <img src="doc/regressor_film_residual.gif" width="100%" alt="reg"> |
 
 ---
 
@@ -187,14 +185,11 @@ Evaluation outputs include per-frame MSE and SSIM metrics, saved to the specifie
 
 ## References
 
-- Stanford FLAME AI Workshop 2024 Dataset:  
-  [https://www.kaggle.com/competitions/2024-flame-ai-challenge/data](https://www.kaggle.com/competitions/2024-flame-ai-challenge/data)
-
 - FireBench simulation dataset:  
   [https://sites.research.google/gr/wildfires/firebench/](https://sites.research.google/gr/wildfires/firebench/)
 
-- Zhihui, L. et al. — *Self-Attention ConvLSTM for Spatiotemporal Prediction*, NeurIPS 2015.
+- Zhihui, L. et al. *Self-Attention ConvLSTM for Spatiotemporal Prediction*, NeurIPS 2015.
 
-- Sukjung, H. et al. — *Hydra: Bidirectional State Space Models Through Generalized Matrix Mixers*, 2024.
+- Sukjung, H. et al. *Hydra: Bidirectional State Space Models Through Generalized Matrix Mixers*, 2024.
 
-- Perez, E. et al. — *FiLM: Visual Reasoning with a General Conditioning Layer*, AAAI 2018.
+- Perez, E. et al. *FiLM: Visual Reasoning with a General Conditioning Layer*, AAAI 2018.
