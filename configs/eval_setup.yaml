@@ -1,6 +1,6 @@
 
 
-Root_directory: "/home/lattarde/workspace/lattarde/baseline/proj5743_apn_parking/apnlab_framework/src/deploy/backend/base/Spatio-temporal-fire-propagation-main"
+Root_directory: "/base/Spatio-temporal-fire-propagation-main"
 
 Dataset_pipeline: 
   data_csv: "{Root_directory}/dataset/test.csv"
